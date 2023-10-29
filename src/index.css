@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&display=swap');
+
+body {
+  padding: 0px;
+  margin: 0;
+ 
+}
+
+.blue-glassmorphism {
+  background: rgb(39, 51, 89, 0.4);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(15px);
+  -webkit-backdrop-filter: blur(50px);
+  border: 1px solid rgba(40, 40, 40, 0.3);
+}
+
+.poppins {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* white glassmorphism */
+.white-glassmorphism {
+  background: rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(5px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.white-glassmorphism:hover {
+  transform: rotateX(-5deg);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.5);
+}
+
+.about-txt {
+  background-color: #ae1414;
+  background-image: radial-gradient(at 4% 36%, hsla(0, 0%, 100%, 1) 0, transparent 53%), radial-gradient(at 100% 60%, rgb(11, 0, 0) 0, transparent 70%);
+
+
+}
+
+.testimonial-slider-container {
+  overflow-x: scroll;
+  scroll-behavior: smooth;
+  white-space: nowrap;
+}
+
+.testimonial-slide {
+  display: inline-block;
+  width: 100%;
+  /* Ensure each testimonial is full-width */
+  vertical-align: top;
+}
+
+.Video {
+  height: 500px !important;
+  width: 800px !important;
+}
+
+@media (max-width: 640px) {
+  .Video {
+    height: 300px !important;
+    width: 400px !important;
+  }
+  .cards{
+    margin-left: 100px !important
+  }
+}
+
+.sctn-1 {
+  background: rgb(30, 78, 135);
+  background: linear-gradient(280deg, rgba(30, 78, 135, 0.647671568627451) 46%, rgba(10, 126, 230, 1) 85%);
+}
+
+.Heading{
+font-weight: bold
+}
+
+.cards{
+  margin-left: 0px
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
